@@ -1,0 +1,11 @@
+.skill-card { 
+    transition: all 0.3s ease; border: none; 
+}
+.skill-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; 
+    background-color: #fcfcfc; 
+}
+.icon-google { 
+    background: -webkit-linear-gradient(#4285F4, #34A853, #FBBC05, #EA4335); -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+}

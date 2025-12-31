@@ -1,0 +1,105 @@
+:root { 
+    --primary-color: #007bff; --dark-bg: #1a1a1a; 
+}
+
+body { 
+    font-family: 'Rubik', sans-serif; overflow-x: hidden; 
+}
+.hero-section { 
+    min-height: 90vh; 
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); 
+    padding-top: 80px; 
+}
+.profile-img { 
+    border: 8px solid white; 
+    transition: transform 0.3s ease; 
+}
+.profile-img:hover { 
+    transform: scale(1.05); 
+}
+.section-title { 
+    position: relative; 
+    padding-bottom: 15px; 
+    margin-bottom: 40px; 
+    font-weight: 700; 
+}
+.section-title::after { 
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 60px; 
+    height: 3px; 
+    background: var(--primary-color); 
+}
+.feature-card { 
+    transition: all 0.3s ease; 
+    border: none; 
+    cursor: pointer; 
+}
+.feature-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
+}
+.icon-circle { 
+    width: 70px; 
+    height: 70px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 50%; 
+    margin: 0 auto 20px; 
+    background: rgba(0, 123, 255, 0.1); 
+    color: var(--primary-color); 
+    font-size: 1.8rem; 
+}
+
+/*-- 03. Technical Skills Hub --*/
+.skill-hub-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.skill-hub-card:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+.skill-hub-card i {
+    transition: transform 0.3s ease;
+}
+.skill-hub-card:hover i {
+    transform: scale(1.1);
+}
+
+/*-- 06. Company Profiles Section --*/
+.company-mini-card {
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+.company-mini-card:hover {
+    transform: translateY(-10px);
+}
+.company-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#company-profiles .section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--bs-primary);
+    margin: 15px auto;
+}
+

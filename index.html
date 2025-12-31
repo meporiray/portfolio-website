@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <title>Home - Paritosh Chandra Ray</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body>
+    <!-- Navber Part HTML Start -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo" style="width: 69px; height: 30px;;"> Paritosh Chandra Ray
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/events.html">Events & Activities</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Skills
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pages/skills/microsoft.html">Microsoft Office 365</a></li>
+                                <li><a class="dropdown-item" href="pages/skills/google.html">Google Workspace</a></li>
+                                <li><a class="dropdown-item" href="pages/skills/graphic.html">Graphic Design</a></li>
+                                <li><a class="dropdown-item" href="pages/skills/webdevelopment.html">Web Development</a></li>
+                                <li><a class="dropdown-item" href="pages/skills/electrical.html">Electrical & Electronics</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="pages/company.html">Company Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navber Part HTML End -->
+
+
+    <!-- Start Main Content -->
+    <main>
+        <!-- 01. Hero Section -->
+        <section class="hero-section d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-center order-md-2">
+                        <img src="assets/images/PoriRay.png" alt="Profile" class="img-fluid rounded-circle shadow-lg profile-img mb-4 mb-md-0" style="max-width: 350px;">
+                    </div>
+                    <div class="col-md-7 order-md-1">
+                        <h5 class="text-primary fw-bold text-uppercase ls-2 mb-4">Welcome to my world</h5>
+                        <h2 class="text-success">Hello, I am </h2>
+                        <h1 class="display-3 fw-bold mb-3">Paritosh Chandra Ray</h1>
+                        <p class="lead text-muted mb-4">Professional Data Analyst, Travel Operations Expert, and Web Developer with 5+ years of experience in driving business efficiency.</p>
+                        <div class="d-flex gap-3">
+                            <a href="pages/portfolio.html" class="btn btn-primary btn-lg px-4 shadow">Explore Portfolio</a>
+                            <a href="pages/contact.html" class="btn btn-outline-dark btn-lg px-4">Let's Talk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. Services / Expertise Section (Links to Skills) -->
+        <section class="py-5 bg-white">
+            <div class="container py-5 text-center">
+                <h2 class="section-title">Core Expertise</h2>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 feature-card shadow-sm" onclick="location.href='pages/skills/google.html'">
+                            <div class="icon-circle"><i class="fa-solid fa-chart-pie"></i></div>
+                            <h4 class="fw-bold">Data Analysis</h4>
+                            <p class="text-muted">Specialized in Google Sheets automation and financial data reconciliation.</p>
+                            <span class="text-primary fw-bold small">View Details →</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 feature-card shadow-sm" onclick="location.href='pages/experience.html'">
+                            <div class="icon-circle"><i class="fa-solid fa-plane"></i></div>
+                            <h4 class="fw-bold">Travel Operations</h4>
+                            <p class="text-muted">Expert GDS management (Galileo/Sabre) and international ticketing.</p>
+                            <span class="text-primary fw-bold small">View Experience →</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 feature-card shadow-sm" onclick="location.href='pages/skills/webdevelopment.html'">
+                            <div class="icon-circle"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h4 class="fw-bold">Web Development</h4>
+                            <p class="text-muted">Building responsive, professional websites with modern technologies.</p>
+                            <span class="text-primary fw-bold small">Check Skills →</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03. Technical Skills Hub -->
+        <section class="py-5 bg-white">
+            <div class="container py-4 text-center">
+                <h2 class="section-title">Technical Skillset</h2>
+                <p class="text-muted mb-5">Click on a category to explore detailed tools and competencies.</p>
+
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+                    
+                    <!-- Skill 1: Microsoft -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm skill-hub-card" onclick="location.href='pages/skills/microsoft.html'">
+                            <div class="card-body py-4">
+                                <i class="fa-brands fa-microsoft fs-1 text-primary mb-3"></i>
+                                <h6 class="fw-bold">Microsoft 365</h6>
+                                <p class="small text-muted mb-0">Excel, Word, Teams, PowerPoint</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2: Google -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm skill-hub-card" onclick="location.href='pages/skills/google.html'">
+                            <div class="card-body py-4">
+                                <i class="fa-brands fa-google fs-1 text-success mb-3"></i>
+                                <h6 class="fw-bold">Google Workspace</h6>
+                                <p class="small text-muted mb-0">Sheets, Apps Script, Forms, Drive</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3: Graphic -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm skill-hub-card" onclick="location.href='pages/skills/graphic.html'">
+                            <div class="card-body py-4">
+                                <i class="fa-solid fa-palette fs-1 text-danger mb-3"></i>
+                                <h6 class="fw-bold">Graphic Design</h6>
+                                <p class="small text-muted mb-0">Photoshop, Illustrator, Premiere Pro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4: Web Dev -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm skill-hub-card" onclick="location.href='pages/skills/webdevelopment.html'">
+                            <div class="card-body py-4">
+                                <i class="fa-solid fa-code fs-1 text-dark mb-3"></i>
+                                <h6 class="fw-bold">Web Development</h6>
+                                <p class="small text-muted mb-0">HTML, CSS, JS, Bootstrap, Node.js</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5: Electrical -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm skill-hub-card" onclick="location.href='pages/skills/electrical.html'">
+                            <div class="card-body py-4">
+                                <i class="fa-solid fa-plug fs-1 text-warning mb-3"></i>
+                                <h6 class="fw-bold">Electrical & Electronics</h6>
+                                <p class="small text-muted mb-0">Smart Home, Repair, Solar Projects</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. Mini Experience Section -->
+        <section class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">Career Snapshot</h2>
+                <div class="bg-white p-5 rounded-4 shadow-sm text-start mx-auto" style="max-width: 900px;">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h3 class="fw-bold mb-1">Manager</h3>
+                            <p class="text-primary mb-3">Aotrek Tourism Ltd & Travel Business Portal</p>
+                            <p class="text-muted small">Leading data-driven operations and airline reservation teams to achieve 100% accuracy and growth.</p>
+                        </div>
+                        <div class="col-md-4 text-md-end">
+                            <a href="pages/experience.html" class="btn btn-outline-primary rounded-pill px-4">Full History</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05. CTA Section -->
+        <section class="py-5 bg-primary text-white text-center">
+            <div class="container py-4">
+                <h2 class="fw-bold">Looking for a Dedicated Professional?</h2>
+                <p class="lead mb-4">I am available for freelance projects or full-time opportunities.</p>
+                <a href="pages/contact.html" class="btn btn-light btn-lg px-5 text-primary fw-bold rounded-pill">Contact Me Today</a>
+            </div>
+        </section>
+
+        <!-- 06. Company Profiles Section -->
+        <section id="company-profiles" class="py-5 bg-light">
+            <div class="container py-4 text-center">
+                <h2 class="section-title">Professional Associations</h2>
+                <p class="text-muted mb-5">Organizations where I contribute my expertise in operations and management.</p>
+
+                <div class="row g-4">
+                    <!-- Company 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm company-mini-card">
+                            <div class="card-body p-4">
+                                <div class="company-icon bg-primary-subtle text-primary mb-3">
+                                    <i class="fa-solid fa- suit-case"></i> TBP
+                                </div>
+                                <h5 class="fw-bold">Travel Business Portal</h5>
+                                <p class="small text-muted">Manager & Travel Operations Expert.</p>
+                                <a href="pages/company.html" class="btn btn-sm btn-outline-primary rounded-pill">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm company-mini-card">
+                            <div class="card-body p-4">
+                                <div class="company-icon bg-success-subtle text-success mb-3">
+                                    <i class="fa-solid fa-leaf"></i> TIENS
+                                </div>
+                                <h5 class="fw-bold">Tiens Bangladesh</h5>
+                                <p class="small text-muted">Healthcare & Direct Selling Global Leader.</p>
+                                <a href="pages/company.html" class="btn btn-sm btn-outline-success rounded-pill">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm company-mini-card">
+                            <div class="card-body p-4">
+                                <div class="company-icon bg-info-subtle text-info mb-3">
+                                    <i class="fa-solid fa-shield-halved"></i> PLICL
+                                </div>
+                                <h5 class="fw-bold">Progressive Life</h5>
+                                <p class="small text-muted">Financial Stability & Life Insurance.</p>
+                                <a href="pages/company.html" class="btn btn-sm btn-outline-info rounded-pill">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm company-mini-card">
+                            <div class="card-body p-4">
+                                <div class="company-icon bg-danger-subtle text-danger mb-3">
+                                    <i class="fa-solid fa-users"></i> PLIC
+                                </div>
+                                <h5 class="fw-bold">Popular Life</h5>
+                                <p class="small text-muted">Leading Insurance Industry Operations.</p>
+                                <a href="pages/company.html" class="btn btn-sm btn-outline-danger rounded-pill">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-5">
+                    <a href="pages/company.html" class="btn btn-primary px-4 shadow-sm">Explore Detailed Profiles</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- End of Main Content -->
+
+
+    <!-- Footer Part -->
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <div class="mb-3">
+                <a href="https://www.linkedin.com/in/paritosh-chandra-ray-926280392/" target="_blank" class="text-white mx-2 fs-5"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/meporiray" target="_blank" class="text-white mx-2 fs-5"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/meporiray" target="_blank" class="text-white mx-2 fs-5"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:meporiray@gmail.com" class="text-white mx-2 fs-5"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="mb-0 opacity-75">&copy; 2025 Paritosh Chandra Ray. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/index.js"></script>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+<!-- Developed by Paritosh Chandra Ray -->

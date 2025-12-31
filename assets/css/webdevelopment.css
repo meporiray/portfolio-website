@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Spectral;
+}
+
+.skill-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+html {
+    scroll-behavior: smooth; /* Smooth scroll for internal links */
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 78px;
+  z-index: 1020;
+}

@@ -1,0 +1,11 @@
+
+.justify { 
+    text-align: justify; 
+}
+.experience-card { 
+    border-left: 5px solid #007bff; 
+    transition: transform 0.3s; 
+}
+.experience-card:hover { 
+    transform: translateX(10px); 
+}

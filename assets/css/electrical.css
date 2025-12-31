@@ -1,0 +1,16 @@
+.skill-card { 
+    transition: all 0.3s ease; 
+    border: none; 
+}
+.skill-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important; 
+    background-color: #fff; 
+}
+.tech-icon { 
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+}
+.justify { 
+    text-align: justify; 
+}

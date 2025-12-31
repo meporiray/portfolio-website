@@ -1,0 +1,9 @@
+/* Professional Hover Effect */
+.skill-card {
+    transition: all 0.3s ease;
+}
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    background-color: #f8f9fa;
+}

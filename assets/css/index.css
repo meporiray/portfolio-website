@@ -1,0 +1,49 @@
+
+h1, h2, h3, h4, h5, p, a, .navbar-brand {
+    font-family: Spectral; 
+    font-weight: bold; 
+}
+
+.navbar { 
+    background-color: #0d1b2a; 
+    padding: 1rem 0; 
+}
+
+.navbar-brand, .nav-link { 
+    color: #fff !important; 
+    font-size: 20px;
+}
+
+.dropdown-item{
+    color: #0d1b2a !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdown-item:hover{
+    color: #00b4d8 !important;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #00b4d8 !important;
+}
+
+.hero-section { 
+    min-height: 85vh; padding: 50px 0; 
+}
+
+
+header{
+    margin-bottom: 78px;
+}
+.profile-img { 
+    width: 350px; 
+    height: 400px; 
+    object-fit: cover; 
+    border: 8px solid #f8aa03bb; 
+}
+.profile-img:hover { 
+    border: 8px solid #00b4d89d; 
+}
+
+
