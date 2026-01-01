@@ -6,14 +6,21 @@
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
     <title>Company Profile - Paritosh Chandra Ray</title>
 
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
+    <!-- Google Fonts (Optimized with display=swap) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik&display=swap">
+
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/company.css">
@@ -27,7 +34,7 @@
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/images/logo.png" alt="logo" style="width: 69px; height: 30px;">  Paritosh Chandra Ray
+                    <img src="../assets/images/logo.png" alt="logo" style="width: 69px; height: 30px;"> Pori Ray
                 </a>
 
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -38,7 +45,7 @@
                     <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/events.html">Events & Activities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/events.html">Events</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                 Skills
@@ -52,8 +59,8 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item"><a class="nav-link active" href="../pages/company.html">Company Profile</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/company.html">Company Profile</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../pages/experience.html">Experience</a></li>
                         <li class="nav-item"><a class="nav-link" href="../pages/portfolio.html">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contact</a></li>
 
@@ -64,116 +71,110 @@
     </header>
     <!-- Navber Part HTML End -->
 
-    <!-- Main Part HTML Start -->
-    <main style="margin-top: 140px; padding-bottom: 50px;">
+    <main style="margin-top: 140px; padding-bottom: 50px; overflow-x: hidden;">
         <section class="container">
             <!-- Page Title -->
-            <div class="text-center mb-5">
+            <!-- 1. FADE-UP ANIMATION -->
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="fw-bold">Company Profiles</h1>
                 <p class="text-muted">A showcase of the organizations and ventures I am associated with.</p>
             </div>
 
             <div class="row g-4">
                 <!-- Profile 1: Travel Business Portal -->
-                <div class="col-lg-6">
+                <!-- 2. ZOOM-IN ANIMATION -->
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+
                     <div class="card company-card border-0 shadow-sm p-3">
                         <div class="card-body">
                             <h3 class="card-title fw-bold text-primary">Travel Business Portal</h3>
                             <p class="text-muted">Overview & Journey of the travel portal operations.</p>
-                            <iframe src="../assets/pdf/company-profile.pdf" class="pdf-frame mb-3"></iframe>
+                            <!-- Added loading="lazy" for speed -->
+                            <iframe src="../assets/pdf/company-profile.pdf" class="pdf-frame mb-3" loading="lazy"></iframe>
                             <div class="d-grid gap-2 d-md-block">
                                 <a href="../assets/pdf/company-profile.pdf" class="btn btn-outline-primary" target="_blank">View Fullscreen</a>
-                                <a href="../assets/pdf/company-profile.pdf" class="btn btn-primary" download>
-                                    <i class="fa-solid fa-file-pdf"></i> Download PDF
-                                </a>
+                                <a href="../assets/pdf/company-profile.pdf" class="btn btn-primary" download><i class="fa-solid fa-file-pdf"></i> Download PDF</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Profile 2: Tiens Bangladesh Company Ltd. -->
-                <div class="col-lg-6">
+                <!-- 3. FLIP-LEFT ANIMATION -->
+                <div class="col-lg-6" data-aos="flip-left" data-aos-delay="300">
+
                     <div class="card company-card border-0 shadow-sm p-3">
                         <div class="card-body">
                             <h3 class="card-title fw-bold text-success">Tiens Bangladesh Company Ltd.</h3>
-                            <p class="text-muted">Direct selling and global healthcare leader in Bangladesh.</p>
-                            
-                            <!-- Website Iframe with Increased Height -->
+                            <p class="text-muted">Direct selling and global healthcare leader.</p>
                             <div class="mb-3 shadow-sm">
-                                <iframe 
-                                    src="https://www.tiens.com.bd/" 
-                                    title="Tiens Bangladesh" 
-                                    class="iframe-tall"
-                                    allowfullscreen>
-                                </iframe>
+                                <iframe src="https://www.tiens.com.bd/" title="Tiens Bangladesh" class="iframe-tall" allowfullscreen loading="lazy"></iframe>
                             </div>
 
+                            <!-- Website Iframe with Increased Height -->                            
                             <div class="d-grid gap-2 d-md-block">
                                 <a href="https://www.tiens.com.bd/" class="btn btn-success" target="_blank">
-                                    <i class="fa-solid fa-globe me-2"></i> Visit Official Website
+                                    <i class="fa-solid fa-globe me-2"></i> Visit Website
                                 </a>
+
                                 <a href="https://www.tiens.com.bd/about-us" target="_blank" class="btn btn-outline-success">
                                     <i class="fa-solid fa-file-pdf"></i> Company Profile
-                                </a>
+                                </a>                            
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Profile 3: Progressive Life Insurance Co. Ltd. -->
-                <div class="col-lg-6">
+                <!-- 4. FADE-RIGHT ANIMATION -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="400">
+
                     <div class="card company-card border-0 shadow-sm p-3">
                         <div class="card-body">
-                            <h3 class="card-title fw-bold text-success">Progressive Life Insurance Co. Ltd.</h3>
-                            <p class="text-muted">Providing secure life insurance and financial stability in Bangladesh.</p>
-                            
-                            <!-- Website Iframe with Increased Height -->
+                            <h3 class="card-title fw-bold text-success">Progressive Life Insurance</h3>
+                            <p class="text-muted">Providing secure life insurance in Bangladesh.</p>
+
+                            <!-- Website Iframe with Increased Height -->                            
                             <div class="mb-3 shadow-sm">
-                                <iframe 
-                                    src="https://www.progressivelife.com.bd/" 
-                                    title="Tiens Bangladesh" 
-                                    class="iframe-tall"
-                                    allowfullscreen>
-                                </iframe>
+                                <iframe src="https://www.progressivelife.com.bd/" class="iframe-tall" allowfullscreen loading="lazy"></iframe>
                             </div>
 
                             <div class="d-grid gap-2 d-md-block">
                                 <a href="https://www.progressivelife.com.bd/" class="btn btn-success" target="_blank">
                                     <i class="fa-solid fa-globe me-2"></i> Visit Official Website
                                 </a>
+
                                 <a href="https://www.progressivelife.com.bd/company-profile" target="_blank" class="btn btn-outline-success">
                                     <i class="fa-solid fa-file-pdf"></i> Company Profile
                                 </a>
-                            </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
 
                 <!-- Profile 4: Popular Life Insurance Co. Ltd. -->
-                <div class="col-lg-6">
+                <!-- 5. FADE-LEFT ANIMATION -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500">
+
                     <div class="card company-card border-0 shadow-sm p-3">
                         <div class="card-body">
-                            <h3 class="card-title fw-bold text-success">Popular Life Insurance Co. Ltd.</h3>
-                            <p class="text-muted">A leading name in the life insurance industry of Bangladesh.</p>
-                            
-                            <!-- Website Iframe with Increased Height -->
+                            <h3 class="card-title fw-bold text-success">Popular Life Insurance</h3>
+                            <p class="text-muted">A leading name in the life insurance industry.</p>
+
+                            <!-- Website Iframe with Increased Height -->                            
                             <div class="mb-3 shadow-sm">
-                                <iframe 
-                                    src="https://www.popularlifeins.com/" 
-                                    title="Tiens Bangladesh" 
-                                    class="iframe-tall"
-                                    allowfullscreen>
-                                </iframe>
+                                <iframe src="https://www.popularlifeins.com/" class="iframe-tall" allowfullscreen loading="lazy"></iframe>
                             </div>
 
                             <div class="d-grid gap-2 d-md-block">
                                 <a href="https://www.popularlifeins.com/" class="btn btn-success" target="_blank">
                                     <i class="fa-solid fa-globe me-2"></i> Visit Official Website
                                 </a>
+
                                 <a href="https://www.popularlifeins.com/" target="_blank" class="btn btn-outline-success">
                                     <i class="fa-solid fa-file-pdf"></i> Company Profile
                                 </a>
-                            </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -191,13 +192,14 @@
     </footer>
     <!-- Footer Part HTML End -->
 
-
+    <!-- Scripts at the bottom for better performance -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <!-- Custom JavaScript -->
     <script src="../assets/js/company.js"></script>
-
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
