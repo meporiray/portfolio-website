@@ -12,8 +12,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
+    <!-- Google Fonts (Optimized with display=swap) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik&display=swap">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/experience.css">
@@ -27,7 +30,7 @@
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/images/logo.png" alt="logo" style="width: 69px; height: 30px;">  Paritosh Chandra Ray
+                    <img src="../assets/images/logo.png" alt="logo" style="width: 69px; height: 30px;"> Pori Ray
                 </a>
 
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -38,7 +41,7 @@
                     <ul class="navbar-nav ms-auto">
 
                         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/events.html">Events & Activities</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/events.html">Events</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                 Skills
@@ -64,146 +67,154 @@
     </header>
     <!-- Navber Part HTML End -->
 
-    <!-- Experience Part HTML Start -->
-    <section class="py-5 mt-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h1 class="fw-bold">Professional Experience</h1>
-                <p class="text-muted">A detailed timeline of my career journey and technical contributions.</p>
-                <hr class="w-25 mx-auto">
-            </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    
-                    <!-- ROLE 1: Manager -->
-                    <div class="card experience-card shadow-sm mb-5">
-                        <div class="card-body p-4">
-                            <div class="d-md-flex justify-content-between align-items-start mb-3">
-                                <div>
-                                    <h3 class="fw-bold text-primary mb-0">Manager</h3>
-                                    <h5 class="text-dark">Aotrek Tourism Ltd & Travel Business Portal</h5>
-                                </div>
-                                <div class="text-md-end mt-2 mt-md-0">
-                                    <span class="badge bg-primary fs-6">Oct 2020 – Oct 2025</span>
-                                    <p class="text-muted mb-0 small"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
-                                </div>
-                            </div>
+    <!-- Main Part HTML Start -->
+    <main>
+        <!-- Experience Part HTML Start -->
+        <section class="py-5 mt-5">
+            <div class="container">
+                <!-- 1. FADE-DOWN ANIMATION -->
+                <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+                    <h1 class="fw-bold">Professional Experience</h1>
+                    <p class="text-muted">A detailed timeline of my career journey and technical contributions.</p>
+                    <hr class="w-25 mx-auto">
+                </div>
 
-                            <p class="justify text-muted border-bottom pb-3">
-                                Responsible for overseeing data operations, financial reconciliation, and airline reservation systems to ensure high operational efficiency and data-driven growth.
-                            </p>
-
-                            <div class="row g-4 mt-2">
-                                <div class="col-md-6">
-                                    <h6 class="fw-bold"><i class="fa-solid fa-chart-line text-primary"></i> Data & Strategy</h6>
-                                    <ul class="small ps-3">
-                                        <li class="mb-2">Developed automated KPI dashboards using <strong>Advanced Excel & Google App Script</strong>.</li>
-                                        <li class="mb-2">Transformed raw sales data into actionable business insights for management.</li>
-                                        <li>Led software development collaboration to improve internal workflows.</li>
-                                    </ul>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        
+                        <!-- ROLE 1: Manager -->
+                        <!-- 2. FADE-RIGHT ANIMATION -->
+                        <div class="card experience-card shadow-sm mb-5" data-aos="fade-right" data-aos-delay="100">
+                            <div class="card-body p-4">
+                                <div class="d-md-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h3 class="fw-bold text-primary mb-0">Manager</h3>
+                                        <h5 class="text-dark">Aotrek Tourism Ltd & Travel Business Portal</h5>
+                                    </div>
+                                    <div class="text-md-end mt-2 mt-md-0">
+                                        <span class="badge bg-primary fs-6 rounded-pill px-3">Oct 2020 – Oct 2025</span>
+                                        <p class="text-muted mb-0 small mt-1"><i class="fa-solid fa-location-dot me-1"></i> Dhaka, Bangladesh</p>
+                                    </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <h6 class="fw-bold"><i class="fa-solid fa-plane-departure text-primary"></i> Operations & Finance</h6>
-                                    <ul class="small ps-3">
-                                        <li class="mb-2">Expert use of <strong>Galileo & Sabre GDS</strong> for global ticketing and reissues.</li>
-                                        <li class="mb-2">Managed Profit-Loss calculations and complex bank statement reconciliations.</li>
-                                        <li>Ensured compliance with IATA/BSP rules for refunds and fare quotations.</li>
-                                    </ul>
+                                <p class="justify text-muted border-bottom pb-3">
+                                    Responsible for overseeing data operations, financial reconciliation, and airline reservation systems to ensure high operational efficiency and data-driven growth.
+                                </p>
+                                <div class="row g-4 mt-2">
+                                    <div class="col-md-6">
+                                        <h6 class="fw-bold"><i class="fa-solid fa-chart-line text-primary me-2"></i> Data & Strategy</h6>
+                                        <ul class="small ps-3">
+                                            <li class="mb-2">Developed automated KPI dashboards using <strong>Advanced Excel & Google App Script</strong>.</li>
+                                            <li>Led software development collaboration to improve internal workflows.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="fw-bold"><i class="fa-solid fa-plane-departure text-primary me-2"></i> Operations & Finance</h6>
+                                        <ul class="small ps-3">
+                                            <li class="mb-2">Expert use of <strong>Galileo & Sabre GDS</strong>.</li>
+                                            <li>Managed Profit-Loss calculations and complex bank statement reconciliations.</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- 2. ROLE: Team Leader -->
-                    <div class="card experience-card shadow-sm mb-5" style="border-left-color: #28a745;">
-                        <div class="card-body p-4">
-                            <div class="d-md-flex justify-content-between align-items-start mb-3">
-                                <div>
-                                    <h4 class="fw-bold text-success mb-0">Team Leader</h4>
-                                    <h5 class="text-dark">Tieshi Bangladesh Company Ltd</h5>
+                        <!-- 2. ROLE: Team Leader -->
+                        <!-- 3. FADE-LEFT ANIMATION -->
+                        <div class="card experience-card shadow-sm mb-5" style="border-left-color: #28a745;" data-aos="fade-left" data-aos-delay="200">
+                            <div class="card-body p-4">
+                                <div class="d-md-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h4 class="fw-bold text-success mb-0">Team Leader</h4>
+                                        <h5 class="text-dark">Tieshi Bangladesh Company Ltd</h5>
+                                    </div>
+                                    <div class="text-md-end">
+                                        <span class="badge bg-success fs-6 rounded-pill px-3">Jan 2020 – Sep 2020</span>
+                                        <p class="text-muted mb-0 small mt-1"><i class="fa-solid fa-location-dot me-1"></i> Dhaka, Bangladesh</p>
+                                    </div>
                                 </div>
-                                <div class="text-md-end">
-                                    <span class="badge bg-success fs-6">Jan 2020 – Sep 2020</span>
-                                    <p class="text-muted mb-0 small"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
-                                </div>
+                                <ul class="ps-3 mb-0 text-muted">
+                                    <li class="mb-2">Supervised and motivated a sales team to achieve and exceed monthly targets.</li>
+                                    <li class="mb-2">Conducted training sessions for new members to enhance communication and sales techniques.</li>
+                                    <li>Monitored team performance and implemented strategies to improve market reach.</li>
+                                </ul>
                             </div>
-                            <ul class="ps-3 mb-0 justify">
-                                <li>Supervised and motivated a sales team to achieve and exceed monthly targets.</li>
-                                <li>Conducted training sessions for new members to enhance communication and sales techniques.</li>
-                                <li>Monitored team performance and implemented strategies to improve market reach.</li>
-                            </ul>
                         </div>
-                    </div>
 
-                    <!-- 3. ROLE: Senior Mechanic -->
-                    <div class="card experience-card shadow-sm mb-5" style="border-left-color: #ffc107;">
-                        <div class="card-body p-4">
-                            <div class="d-md-flex justify-content-between align-items-start mb-3">
-                                <div>
-                                    <h4 class="fw-bold text-warning mb-0">Senior Mechanic (Electrical)</h4>
-                                    <h5 class="text-dark">Electrical Mechanic Projects</h5>
+                        <!-- 3. ROLE: Senior Mechanic -->
+                        <!-- 4. FADE-RIGHT ANIMATION -->
+                        <div class="card experience-card shadow-sm mb-5" style="border-left-color: #ffc107;" data-aos="fade-right" data-aos-delay="300">
+                            <div class="card-body p-4">
+                                <div class="d-md-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h4 class="fw-bold text-warning mb-0">Senior Mechanic (Electrical)</h4>
+                                        <h5 class="text-dark">Electrical Mechanic Projects</h5>
+                                    </div>
+                                    <div class="text-md-end">
+                                        <span class="badge bg-warning text-dark fs-6 rounded-pill px-3">Jan 2018 – Dec 2020</span>
+                                        <p class="text-muted mb-0 small mt-1"><i class="fa-solid fa-location-dot me-1"></i> Thakurgoan, Bangladesh</p>
+                                    </div>
                                 </div>
-                                <div class="text-md-end">
-                                    <span class="badge bg-warning text-dark fs-6">Jan 2018 – Dec 2020</span>
-                                    <p class="text-muted mb-0 small"><i class="fa-solid fa-location-dot"></i> Thakurgoan, Bangladesh</p>
-                                </div>
+                                <ul class="ps-3 mb-0 text-muted">
+                                    <li class="mb-2">Expertise in <strong>House Wiring</strong> and industrial electrical installations.</li>
+                                    <li class="mb-2">Designed and implemented <strong>Sensor-based automation</strong> and <strong>Solar Energy Projects</strong>.</li>
+                                    <li>Troubleshot complex electrical circuits and maintained safety compliance protocols.</li>
+                                </ul>
                             </div>
-                            <ul class="ps-3 mb-0 justify">
-                                <li>Expertise in <strong>House Wiring</strong> and industrial electrical installations.</li>
-                                <li>Designed and implemented <strong>Sensor-based automation</strong> and <strong>Solar Energy Projects</strong>.</li>
-                                <li>Troubleshot complex electrical circuits and maintained safety compliance protocols.</li>
-                            </ul>
                         </div>
-                    </div>
 
-                    <!-- 4. ROLE: Field Manager (Progressive Life) -->
-                    <div class="card experience-card shadow-sm mb-5" style="border-left-color: #17a2b8;">
-                        <div class="card-body p-4">
-                            <div class="d-md-flex justify-content-between align-items-start mb-3">
-                                <div>
-                                    <h4 class="fw-bold text-info mb-0">Field Manager</h4>
-                                    <h5 class="text-dark">Progressive Life Insurance Co. Ltd.</h5>
+                        <!-- 4. ROLE: Field Manager (Progressive Life) -->
+                        <!-- 5. FADE-RIGHT ANIMATION -->
+                        <div class="card experience-card shadow-sm mb-5" style="border-left-color: #17a2b8;" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-body p-4">
+                                <div class="d-md-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h4 class="fw-bold text-info mb-0">Field Manager</h4>
+                                        <h5 class="text-dark">Progressive Life Insurance Co. Ltd.</h5>
+                                    </div>
+                                    <div class="text-md-end">
+                                        <span class="badge bg-info fs-6 rounded-pill px-3">Mar 2018 – Nov 2019</span>
+                                        <p class="text-muted mb-0 small mt-1"><i class="fa-solid fa-location-dot me-1"></i> Kakrail, Dhaka</p>
+                                    </div>
                                 </div>
-                                <div class="text-md-end">
-                                    <span class="badge bg-info fs-6">Mar 2018 – Nov 2019</span>
-                                    <p class="text-muted mb-0 small"><i class="fa-solid fa-location-dot"></i> Kakrail, Dhaka</p>
-                                </div>
+                                <ul class="ps-3 mb-0 text-muted">
+                                    <li class="mb-2">Identified and developed new client profiles to expand the company’s portfolio.</li>
+                                    <li class="mb-2">Maintained strong customer relationships and provided detailed insurance policy consultations.</li>
+                                    <li>Led field activities to increase brand awareness in competitive markets.</li>
+                                </ul>
                             </div>
-                            <ul class="ps-3 mb-0 justify">
-                                <li>Identified and developed new client profiles to expand the company’s portfolio.</li>
-                                <li>Maintained strong customer relationships and provided detailed insurance policy consultations.</li>
-                                <li>Led field activities to increase brand awareness in competitive markets.</li>
-                            </ul>
                         </div>
-                    </div>
 
-                    <!-- 5. ROLE: Field Manager (Popular Life) -->
-                    <div class="card experience-card shadow-sm mb-5" style="border-left-color: #6c757d;">
-                        <div class="card-body p-4">
-                            <div class="d-md-flex justify-content-between align-items-start mb-3">
-                                <div>
-                                    <h4 class="fw-bold text-secondary mb-0">Field Manager</h4>
-                                    <h5 class="text-dark">Popular Life Insurance Co. Ltd.</h5>
+                        <!-- 5. ROLE: Field Manager (Popular Life) -->
+                        <!-- 6. FADE-RIGHT ANIMATION -->
+                        <div class="card experience-card shadow-sm mb-5" style="border-left-color: #6c757d; " data-aos="fade-left" data-aos-delay="500">
+                            <div class="card-body p-4">
+                                <div class="d-md-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h4 class="fw-bold text-secondary mb-0">Field Manager</h4>
+                                        <h5 class="text-dark">Popular Life Insurance Co. Ltd.</h5>
+                                    </div>
+                                    <div class="text-md-end">
+                                        <span class="badge bg-secondary fs-6 rounded-pill px-3">May 2017 – Jul 2018</span>
+                                        <p class="text-muted mb-0 small"><i class="fa-solid fa-location-dot"></i> Dilkusha, Dhaka</p>
+                                    </div>
                                 </div>
-                                <div class="text-md-end">
-                                    <span class="badge bg-secondary fs-6">May 2017 – Jul 2018</span>
-                                    <p class="text-muted mb-0 small"><i class="fa-solid fa-location-dot"></i> Dilkusha, Dhaka</p>
-                                </div>
+                                <ul class="ps-3 mb-0 text-muted">
+                                    <li class="mb-2">Drove customer acquisition through strategic market growth initiatives.</li>
+                                    <li class="mb-2">Managed agent networks and ensured high-quality service delivery to policyholders.</li>
+                                    <li>Analyzed local market trends to customize sales approaches for field teams.</li>
+                                </ul>
                             </div>
-                            <ul class="ps-3 mb-0 justify">
-                                <li>Drove customer acquisition through strategic market growth initiatives.</li>
-                                <li>Managed agent networks and ensured high-quality service delivery to policyholders.</li>
-                                <li>Analyzed local market trends to customize sales approaches for field teams.</li>
-                            </ul>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Experience Part HTML End -->
+        </section>
+        <!-- Experience Part HTML End -->
+    </main>
+    <!-- Main Part HTML End -->
+
 
     <!-- Footer Part HTML Start -->
     <footer class="bg-dark text-light text-center py-4">
@@ -213,6 +224,8 @@
     </footer>
     <!-- Footer Part HTML End -->
 
+    <!-- AOS JS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="../assets/js/experience.js"></script>
@@ -222,4 +235,3 @@
     
 </body>
 </html>
-
