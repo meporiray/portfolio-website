@@ -1,3 +1,35 @@
+/* Update your existing main margin */
+main {
+    margin-top: 85px; /* Slightly more space for mobile safety */
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.9rem; /* Prevent brand text from wrapping on tiny phones */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h2 {
+        font-size: 1.2rem; /* Scale down the title on small mobile */
+    }
+}
+/* Add this to your CSS */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-text {
+    flex-grow: 1; /* Pushes the 'Read More' button to the bottom of the card */
+}
+
+@media (max-width: 768px) {
+    .activity-img {
+        height: 180px; /* Shorter height for the side-by-side images on mobile */
+    }
+}
+
+
 body { 
     background-color: #f8f9fa; 
     font-family: Spectral;
@@ -46,7 +78,9 @@ h4{
 /* --- Super Animations CSS --- */
 
 /* 1. Smooth Page Scroll */
-html { scroll-behavior: smooth; }
+html { 
+    scroll-behavior: smooth; 
+}
 /* 2. Carousel Text Animation */
 .carousel-caption h2 {
     animation: fadeInUp 1.2s ease-out both;
