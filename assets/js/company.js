@@ -1,5 +1,9 @@
-// Initialize Animations
-AOS.init({
-    duration: 800, // Animation speed
-    once: true     // Whether animation should happen only once
+//The Initialization (Wait for page to load)
+
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+    duration: 1000,
+    once: true,
+    mirror: false
+    });
 });
