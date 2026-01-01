@@ -2,10 +2,58 @@
 .justify { 
     text-align: justify; 
 }
-.experience-card { 
-    border-left: 5px solid #007bff; 
-    transition: transform 0.3s; 
+
+body {
+    background: linear-gradient(-45deg, #f8f9fa, #e9ecef, #dee2e6, #f8f9fa);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    overflow-x: hidden;
 }
-.experience-card:hover { 
-    transform: translateX(10px); 
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* 2. Interactive Card Styles */
+.experience-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-left: 5px solid #0d6efd; /* Default color */
+}
+.experience-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+    background: #ffffff;
+}
+/* 3. Badge Pulse Animation */
+.badge {
+    transition: transform 0.3s ease;
+}
+.experience-card:hover .badge {
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+/* 4. Timeline Line Effect */
+.col-lg-10 {
+    border-left: 2px dashed #dee2e6;
+    padding-left: 30px;
+    position: relative;
+}
+/* 5. Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #0d6efd;
+    border-radius: 10px;
 }
