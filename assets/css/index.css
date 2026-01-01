@@ -36,14 +36,5 @@ h1, h2, h3, h4, h5, p, a, .navbar-brand {
 header{
     margin-bottom: 78px;
 }
-.profile-img { 
-    width: 350px; 
-    height: 400px; 
-    object-fit: cover; 
-    border: 8px solid #f8aa03bb; 
-}
-.profile-img:hover { 
-    border: 8px solid #00b4d89d; 
-}
 
 
